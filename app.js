@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use('/', createProxyMiddleware({
-  target: 'https://npacindia.in',
+  target: 'https://test.npacindia.in',
   changeOrigin: true,
   secure: true, // set false if SSL issues
 }));
